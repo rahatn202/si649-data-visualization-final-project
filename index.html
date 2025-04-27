@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Understanding the Overdose Death Crisis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
 
-  <!-- Vega libraries to render the charts (if needed) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
 
   <style>
     body {
@@ -77,43 +79,107 @@
       margin-bottom: 1rem;
     }
   </style>
+
 </head>
 
 <body>
-
-<!-- Hero Banner Section -->
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>Examining the Drug Overdose Deaths Epidemic</h1>
-    <p>By Rahat Naseem, Xiaoqian Zhou, Paru Banjara</p>
-  </div>
-</section>
-
-<main>
-
-  <section id="intro">
-    <h1>Examining the Drug Overdose Death Epidemic </h1>
-    <p>Drug overdose deaths have emerged as a major public health crisis in the United States. This narrative explores key trends and insights into overdose mortality rates from 1999 to 2022, evaluates the effects of policy interventions over time, and investigates potential correlations between overdose deaths and unemployment rates.</p>
-</section>
-<section>
-  <h2> From Coast to Heartland: How Overdose Deaths Vary Across the U.S.</h2>
-  <p>The tile map highlights sharp contrasts in overdose death rates across states. West Virginia (29.0 deaths per 100,000) and Maryland (17.5) reported some of the highest averages from 1999 to 2022, while Hawaii (4.4) and Nebraska (2.7) maintained much lower rates.</p>
-  <p>Missouri, historically limited in Prescription Drug Monitoring Program (PMP) regulations, consistently faced higher overdose death rates than many peers. Selecting a state reveals how local trends have evolved alongside national patterns. For example, Washington, once below the national average, experienced a sharp rise over the past two decades.</p>
-    <div id="chart1" class="chart-container"></div>
-</section>
-  <section>
-    <h2>Who Is Most Affected? Exploring Demographic Trends in Overdose Deaths</h2>
-    <p>Across years, the overall trend in drug overdose death rates shows a steady increase nationally. This pattern is consistently reflected when broken down by demographic groups and sex.</p>
-    <p>Although absolute overdose death rates differ across racial groups and between males and females, the general upward trend remains evident across all categories.</p>
-    <p>In particular, males consistently experience higher overdose death rates compared to females, and certain racial groups such as American Indian & Alaska Native populations and White populations report higher rates than others. These trends suggest that while the magnitude of risk varies by demographic factors, the broader escalation of overdose mortality is a shared national experience.</p>
-    <div id="chart2" class="chart-container"></div>
+  <section class="project-topic">
+    <div class="project-overlay"></div>
+    <div class="project-text">
+      <h1>Examining the Drug Overdose Deaths Epidemic</h1>
+      <p>By Paru Banjara, Rahat Naseem, Xiaoqian Zhou</p> <!-- ordered alphabetically by last name -->
+    </div>
   </section>
-  <section>
-    <h2>Overdose Death Rates and Unemployment</h2>
-    <p>States that adopted opioid prescribing limits and monitoring programs earlier often saw reductions in opioid prescribing and overdose death rates. However, effects vary widely by region and population.</p>
-    <div id="chart5" class="chart-container"></div>
-  </section>
+
+
+  <main>
+
+    <section id="intro">
+      <h1>Examining the Drug Overdose Death Epidemic </h1>
+      <p>
+        Drug overdose deaths have emerged as a major public health crisis in the United States. This narrative explores
+        key trends and insights into overdose mortality rates from 1999 to 2022, evaluates the effects of policy
+        interventions over time, and investigates potential correlations between overdose deaths and unemployment rates.
+      </p>
+    </section>
+    <section>
+      <h2> From Coast to Heartland: How Overdose Deaths Vary Across the U.S.</h2>
+      <p>
+        The tile map highlights sharp contrasts in overdose death rates across states. West Virginia (29.0 deaths per
+        100,000) and Maryland (17.5) reported some of the highest averages from 1999 to 2022, while Hawaii (4.4) and
+        Nebraska (2.7) maintained much lower rates.
+      </p>
+      <p>
+        Missouri, historically limited in Prescription Drug Monitoring Program (PMP) regulations, consistently faced
+        higher overdose death rates than many peers. Selecting a state reveals how local trends have evolved alongside
+        national patterns. For example, Washington, once below the national average, experienced a sharp rise over the
+        past two decades.
+      </p>
+      <div id="chart1" class="chart-container"></div>
+      <span>Fig.1: Average Overdose Death Rates by State</span>
+    </section>
+    <section>
+      <h2>Who Is Most Affected? Exploring Demographic Trends in Overdose Deaths</h2>
+      <p>
+        Across years, the overall trend in drug overdose death rates shows a steady increase nationally. This pattern
+        is consistently reflected when broken down by demographic groups and sex.
+      </p>
+      <p>Although absolute overdose death rates differ across racial groups and between males and females, the general
+        upward trend remains evident across all categories.
+      </p>
+      <p>
+        In particular, males consistently experience higher overdose death rates compared to females, and certain
+        racial groups such as American Indian & Alaska Native populations and White populations report higher rates than
+        others. These trends suggest that while the magnitude of risk varies by demographic factors, the broader
+        escalation of overdose mortality is a shared national experience.
+      </p>
+      <div id="chart2" class="chart-container"></div>
+      <span>Fig.2: Overdose Death Rates by Demographic</span>
+    </section>
+    <section>
+      <h2>How Overdose Death Rates and Unemployment Rates Compare Across States?</h2>
+      <p>
+        Ghertner, & Groves, in The U.S. Department of Health and Human Services' APSE Research Brief states that "National measures of opioid prescribing and 
+        substance use have been consistently rising since the early 2000s. Part of this rise corresponded with economic declines; however, 
+        rates continued to rise even after economic indicators showed improvement. The increase at the national level masks variation in 
+        rates across the country." 
+      </p>
+      <p>Our analysis also showed that the opioid overdose death rates have been increasing over the years which 
+        can be seen by dragging the slider. The color of the states becomes darker as we move the slider to the right.
+      </p>
+      <p> 
+        The figure 3, an interactive chart, provides an opportunity to explore the yearly trend of opioid overdose death date 
+        and unemployement for years 2005 to 2014. The bar chart on the right shows the trend of unemployment rate by month in 
+        a selected state and year. The map on the left shows the opioid overdose death rate by state for the selected year. The 
+        states with light gray color indicate that thoses states do not have data for certain years. 
+      </p>
+      <p>From our analysis, it appears
+        that <b>Michigan</b> had the highest unemployment rate <b>14.3%</b> in June and July of year 2009 and <b>Hawaii</b> had the lowest 
+        unemployment rate of <b>2.4%</b> in January 2007. The state with the highest opioid overdose death rate is <b>West Virginia</b> with
+        <b>31.6%</b> death rate in 2014. The state with lowest opioid overdose death rate is <b>Mississippi</b> with <b>1.4%</b> death rate in 2005.
+      </p>
+
+      <div id="chart4" class="chart-container"></div>
+      <span>Fig.3: Overdose Death Rates and Unemployment by State</span>
+    </section>
+    <section>
+      <h2>Comparison between Overdose Death Rate, Poverty Rate and Unemployment Rate</h2>
+      <p>
+        The figure 4 is aimed to explore the trend of opioid overdose death rate with state poverty rate and unemployemnt rate in order to 
+        identify any relationship between opioid overdose death and the other two factors. The chart also shows that West Virginia has the 
+        highest average opioid overdose death rate of 21.83, which is indicated by the biggest size of the circle and Mississippi has the highest
+        poverty rate of 14.3, indicated by the darkest brown color. 
+      </p>
+      <p>
+        <b>North Dakota</b> has the lowest average opioid overdose death rate of <b>0.96%</b>, samllest
+        size of the circle at the bottl of the chart. The <b>New Hampshire</b> has the lowest average poverty rate of <b>4.4%</b>, the one with the lightest 
+        color. It appears that there might be some correlation between opioid overdose death rate and poverty rate darker and bigger circles 
+        vs lighter and smaller circles, but it needs to be further explored.
+      </p>
+      <div id="chart5" class="chart-container"></div>
+      <span>Fig.4: Overdose Death Rates, Unemployment, and Poverty</span>
+    </section>
+=======
   <h2>Impacts of Policy Interventions</h2>
   <p>
     Over the past two decades, opioid-related overdose deaths have risen dramatically, prompting state governments to adopt a variety of policy measures aimed at prevention and harm reduction. 
@@ -148,47 +214,132 @@
   
 </section>
   <section>
+
     <h2>Impacts of Policy Interventions</h2>
-    <p>States that adopted opioid prescribing limits and monitoring programs earlier often saw reductions in opioid prescribing and overdose death rates. However, effects vary widely by region and population.</p>
-    <div id="chart4" class="chart-container"></div>
+    <p>
+      States that adopted opioid prescribing limits and monitoring programs earlier often saw reductions in opioid
+      prescribing and overdose death rates. However, effects vary widely by region and population. 
+    </p>
+    <p>
+      <ul> 
+        <b>Opioid Related Controls</b>
+      <li>
+        <a href="https://pdaps.org/datasets/opioid-analgesics-prescribing-limits">State Laws Limiting Prescriptions for Opioid Analgesics</a>
+      </li>
+    </p>
+      <b>Harm Reduction</b>
+      <li>
+      <a href="https://pdaps.org/datasets/laws-regulating-administration-of-naloxone-1501695139">Naloxone Overdose Prevention Laws</a>
+    </li>
+      <p>Administering naloxone hydrochloride (“naloxone”) can reverse an opioid overdose and prevent unintentional death.</p>
+      
+      <b>Prescription Drug Monitoring Program</b>
+      <li>
+      <a href="https://pdaps.org/datasets/pdmp-implementation-dates">PDMP Implementation Dates</a>
+    </li>
+    </ul> 
+    <p>
+      Prescription drug monitoring programs (PDMPs) collect patient-specific prescription information in centralized databases 
+      in an effort to reduce the misuse of controlled substances.
+    </p>
+      <p>
+      Over the past two decades, opioid-related overdose deaths have risen dramatically, prompting state governments to adopt a 
+      variety of policy measures aimed at prevention and harm reduction. Among the most common interventions are:</p>
+      
+      <p><b>State laws limiting opioid prescriptions</b> (Opioid Related Controls),</p>
+      <p>
+        <b>Naloxone overdose prevention laws</b> (Harm Reduction), and
+      <p>
+        <b>Prescription Drug Monitoring Programs (PDMPs)</b>, which are centralized databases for controlled substance prescriptions.
+      </p>
+      <p>
+      While these measures aim to mitigate opioid misuse and prevent overdose deaths, it remains unclear how effective they 
+      are in curbing the rising trend of opioid-related mortality across different states.
+    </p>
+      <p>
+      As said in article Effectiveness of Policies for Addressing the US Opioid Epidemic: A Model-Based Analysis from the 
+      Stanford-Lancet Commission on the North American Opioid Crisis, “Expanded health services for individuals with opioid use 
+      disorder combined with PMPs and reduced opioid prescribing would moderately lessen the severity of the opioid crisis. 
+      Tragically, even with improved public policies, significant morbidity and mortality is inevitable.”
+    </p>
+    <div id="chart3" class="chart-container"></div>
+    <span>Fig.5: Policy Interventions</span>
+    </section>
+
+    <section id="challenges">
+      <h2>Challenges</h2>
+      <p>
+      From our analysis, it doesn't appear that there is any direct connection of overdose death with poverty and unemployment. Hence, our 
+      assumption is there could be some external factors that might be driving the opioid overdose epidemic, but due to time constraints, we 
+      couldn't explore all possible factors. We didn't have enough data available to explore in depth. There were a lot of missing data for 
+      unemployment for many states and the data was only available from 2005 to 2014. We have made comparisons for the years the data was available.
+      </p>
+    </section>
+
+    <section id="conclusion">
+    <h2>Results/Conclusion</h2>
+    <p>
+      Addressing the opioid crisis requires a comprehensive approach that includes prevention, treatment, harm reduction, and recovery support 
+      strategies. Continued monitoring and data-driven policy interventions are critical to mitigating the public health impacts of this epidemic.
+    </p>
+    <p></p>
   </section>
-  
-  
-  <!-- <section id="conclusion">
-    <h2>Conclusion</h2>
-    <p>Addressing the opioid crisis requires a comprehensive approach that includes prevention, treatment, harm reduction, and recovery support strategies. Continued monitoring and data-driven policy interventions are critical to mitigating the public health impacts of this epidemic.</p>
-  </section> -->
-  <section id="data-sources" style="background-color: #f8f8f8; padding: 2rem;">
-    <h2 style="text-align: center;">Data Sources</h2>
-  
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4rem; max-width: 1000px; margin: auto;">
-  
-      <div>
-        <h3>Overdose Death Rates</h3>
-        <ul>
-          <li>
-            <a href="https://nida.nih.gov/research-topics/trends-statistics/overdose-death-rates#:~:text=Overall%2C%20drug%20overdose%20deaths%20rose,overdose%20deaths%20reported%20in%202022." target="_blank">
-              Drug Overdose Deaths: Facts and Figures (NIDA)
-            </a>
-          </li>
-          <li>
-            <a href="https://www.cdc.gov/nchs/nvss/drug-overdose-deaths.htm" target="_blank">
-              Drug Overdose Deaths (CDC)
-            </a>
-          </li>
-        </ul>
+
+    <section id="data-sources" style="background-color: #f8f8f8; padding: 2rem;">
+      <h2 style="text-align: center;">Data Sources</h2>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4rem; max-width: 1000px; margin: auto;">
+
+        <div>
+          <h3>Overdose Death Rates</h3>
+          <ul>
+            <li>
+              <a href="https://nida.nih.gov/research-topics/trends-statistics/overdose-death-rates#:~:text=Overall%2C%20drug%20overdose%20deaths%20rose,overdose%20deaths%20reported%20in%202022."
+                target="_blank">
+                Drug Overdose Deaths: Facts and Figures (NIDA)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/nchs/nvss/drug-overdose-deaths.htm" target="_blank">
+                Drug Overdose Deaths (CDC)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Unemployment</h3>
+          <ul>
+            <li>
+              <a href="https://www.bls.gov/" target="_blank">
+                U.S. Bureau of Labor Statistics
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
-  
-      <div>
-        <h3>Unemployment</h3>
-        <ul>
-          <li>
-            <a href="https://www.bls.gov/" target="_blank">
-              U.S. Bureau of Labor Statistics
-            </a>
-          </li>
-        </ul>
+    </section>
+
+    <section id="references" style="background-color: #f8f8f8; padding: 2rem;">
+      <h2 style="text-align: center;">References</h2>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4rem; max-width: 1000px; margin: auto;">
+
+        <div>
+        Ghertner, R., & Groves, L. (2018, September 11). THE OPIOID CRISIS AND ECONOMIC OPPORTUNITY: GEOGRAPHIC AND ECONOMIC TRENDS. U.S. Department of Health and Human Services.  
+        <a href="https://aspe.hhs.gov/sites/default/files/private/pdf/259261/ASPEEconomicOpportunityOpioidCrisis.pdf" target="_blank">
+          The Opioid Crisis and Economic Opportunity: Geographic and economic trends
+        </a>
+
+        </div>
+
+        <div>
+
+        </div>
+
       </div>
+
       
       <div>
         <h3>Policy</h3>
@@ -225,5 +376,7 @@
   vegaEmbed('#chart5', 'chart5.json');
 </script>
 
+
 </body>
+
 </html>
